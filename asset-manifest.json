@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/villas-project/static/css/main.79307f0b.css",
+    "main.js": "/villas-project/static/js/main.47d689d6.js",
+    "static/media/image02.jpg": "/villas-project/static/media/image02.7ebc9ba98d5d1986124b.jpg",
+    "static/media/image01.jpg": "/villas-project/static/media/image01.e03e54ba909dca2b511c.jpg",
+    "index.html": "/villas-project/index.html",
+    "main.79307f0b.css.map": "/villas-project/static/css/main.79307f0b.css.map",
+    "main.47d689d6.js.map": "/villas-project/static/js/main.47d689d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79307f0b.css",
+    "static/js/main.47d689d6.js"
+  ]
+}
