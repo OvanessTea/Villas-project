@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.App {
+    padding: 92px 80px 79px 133px;
+    display: flex;
+}
+.main {
+    width: 534px;
+    display: flex;
+    flex-direction: column;
+}
+.location {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 217px;
+}
+.location::after {
+    content: "";
+    background: #f2f2f2;
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    left: 199px;
+    top: 0px;
+}
+.villasName {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 83.25px;
+    font-family: "Poiret One", sans-serif;
+    margin-bottom: 31px;
+    white-space: pre-line;
+}
+label button {
+    border: none;
+    background-color: #fff;
+    height: 55px;
+    width: 96px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main label {
+    display: flex;
+    flex-direction: row;
+}
+.button_label {
+    margin: 0px 0px 215px 125px;
+}
+.button_label::after {
+    content: " ";
+    background: #f2f2f2;
+    position: absolute;
+    height: 1px;
+    width: 217px;
+    top: 548px;
+    left: 450px;
+}
+.prev_btn,
+.next_btn {
+    font-size: 12px;
+}
+.prev_btn:disabled,
+.next_btn:disabled {
+    cursor: default;
+}
+.prev_btn::after {
+    content: "";
+    background: #000;
+    position: absolute;
+    width: 37px;
+    height: 0px;
+    top: 565px;
+}
+.prev_btn:not([disabled]):hover::after {
+    height: 1px;
+    animation-name: first_button;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+@keyframes first_button {
+    from {
+        left: 384px;
+    }
+    to {
+        left: 287px;
+    }
+}
+.next_btn::after {
+    content: "";
+    background: #000;
+    position: absolute;
+    width: 37px;
+    height: 0px;
+    top: 565px;
+}
+.next_btn:not([disabled]):hover::after {
+    height: 1px;
+    animation-name: second_button;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+@keyframes second_button {
+    from {
+        left: 287px;
+    }
+    to {
+        left: 384px;
+    }
+}
+label p {
+    color: rgb(189, 189, 189);
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.2rem;
+}
+
+.p_label {
+    margin-right: 86px;
+}
+.p_label_line::after {
+    content: "";
+    background: #e0e0e0;
+    position: absolute;
+    width: 43.84px;
+    height: 1px;
+    left: 178px;
+    top: 805px;
+}
+.p_label_line_01::after {
+    transform: rotate(-135deg);
+}
+.p_label_line_02::after {
+    transform: rotate(135deg);
+}
+.second_villa {
+    margin-top: -197.5px;
+    z-index: -1;
+}
+.second_location {
+    margin-top: -232px;
+}
+
+._details img {
+    z-index: 2;
+    width: 666px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+._details p {
+    position: absolute;
+    padding-top: 52px;
+    top: 750px;
+    height: 71px;
+    width: 222px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2rem;
+}
+._details p::after {
+    content: "\27F6";
+    font-size: 15px;
+    margin-left: 17px;
+    animation-name: details;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+._details:hover p::after {
+    animation-name: details_hover;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes details_hover {
+    from {
+        margin-left: 17px;
+    }
+    to {
+        margin-left: 79.5px;
+    }
+}
+@keyframes details {
+    from {
+        margin-left: 79.5px;
+    }
+    to {
+        margin-left: 17px;
+    }
+}
+._sidebar {
+    margin: 11px 80px auto 81px;
+    display: flex;
+    flex-direction: column;
+}
+.burger {
+    display: inline-block;
+    margin-left: 43.5px;
+    margin-bottom: 230px;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #333333;
+    position: absolute;
+    height: 2px;
+    width: 19px;
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -4px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 4px;
+}
+.logo {
+    margin-bottom: 280px;
+}
+.contacts {
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts > * {
+    max-height: 16px;
+    max-width: 16px;
+}
